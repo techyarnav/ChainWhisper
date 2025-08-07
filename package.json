@@ -1,0 +1,68 @@
+{
+    "name": "chain-whisper",
+    "version": "1.0.1",
+    "description": "Privacy-focused CLI Web3 chat on Sepolia Scroll Testnet",
+    "main": "src/index.js",
+    "bin": {
+        "chain-whisper": "./src/index.js"    
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/techyarnav/ChainWhisper.git"
+    },
+    "bugs": {
+        "url": "https://github.com/techyarnav/ChainWhisper/issues"
+    },
+    "homepage": "https://github.com/techyarnav/ChainWhisper#readme",
+    "scripts": {
+        "start": "node src/index.js",
+        "test": "node test/test-services.js",
+        "node": "npx hardhat node",
+        "compile": "npx hardhat compile",
+        "clean": "npx hardhat clean",
+        "verify": "npx hardhat verify --network sepolia-scroll",
+        "dev": "nodemon src/index.js"
+    },
+    "keywords": [
+        "web3",
+        "chat",
+        "blockchain",
+        "ethereum",
+        "privacy",
+        "cli",
+        "encrypted",
+        "decentralized"
+    ],
+    "author": "techyarnav@gmail.com",
+    "license": "MIT",
+    "engines": {
+        "node": ">=16.0.0",
+        "npm": ">=8.0.0"
+    },
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "comment-strip-cli": "^1.0.0",
+        "crypto-js": "^4.2.0",
+        "dotenv": "^16.6.1",
+        "ethers": "^6.15.0",
+        "figlet": "^1.8.2",
+        "inquirer": "^8.2.6",
+        "libsodium-wrappers": "^0.7.15",
+        "ora": "^5.4.1",
+        "tweetnacl": "^1.0.3",
+        "tweetnacl-util": "^0.15.1",
+        "web3.storage": "^4.5.5",
+        "yargs": "^17.7.2"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+        "eslint": "^8.57.1",
+        "hardhat": "^2.26.2",
+        "nodemon": "^3.1.10"
+    },
+    "files": [
+        "src/",
+        "README.md",
+        "LICENSE"
+    ]
+}
